@@ -1,0 +1,12 @@
+body {
+  background-image: url("./garden_sun\ copy.jpg");
+  background-repeat: no-repeat;
+  min-width: 500px;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-size: 800px;
+  }
+}
