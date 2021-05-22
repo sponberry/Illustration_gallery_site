@@ -1,0 +1,39 @@
+.background-img {
+  width: 100vw;
+}
+
+/* 
+  .opener {
+    background-size: 800px;
+  }
+} */
+
+/* TODO make this positioning more reliable across all devices */
+.enter-button {
+  padding: 20px;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  opacity: 70%;
+  /* @media all and (orientation: portrait) {
+    .enter-button {
+      display: none !important;
+    }
+  } */
+  /* @media (max-width: 375px) {
+
+  } */
+}
+
+@media (orientation: portrait) {
+  .enter-button button {
+    display: none !important;
+  }
+}
+
+.enter-button p {
+  padding-top: 10px;
+  @media all and (orientation: portrait) {
+    background-color: red !important;
+  }
+}

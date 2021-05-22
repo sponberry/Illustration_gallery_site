@@ -1,0 +1,243 @@
+$slide-count: 4;
+$slide-width: 30rem;
+
+// custom styles //
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css");
+
+.gallery-container {
+  margin: 5% 25%;
+  padding-bottom: 120px;
+  @media (max-width: 425px) {
+    padding-bottom: 60px;
+  }
+}
+
+// max-height currently changes nothing
+.responsive {
+  display: block;
+  margin: 0 auto;
+  max-height: 600px;
+  width: auto;
+}
+
+// this controls buttons below img
+.input-group-prepend {
+  text-align: center;
+  padding-top: 10px;
+  display: inline-block !important;
+  margin: 0 auto !important;
+}
+.right-btn {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+.extra-btn {
+  display: none;
+}
+// buttons up to here
+
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-size: 1.5rem;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.carousel__wrap {
+    margin-top: 10%;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// this controls wrapper with arrows and dots
+.carousel__inner {
+    height: 40rem;
+    position: relative;
+    width: calc(#{$slide-width * 3});
+}
+
+.carousel__container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel__slide-list {
+    height: 100%;
+    left: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    width: calc(#{($slide-count + 0.5) * $slide-width * 2});
+}
+
+.carousel__slide-item {
+    display: inline-block;
+    height: $slide-width * 1.2;
+    margin: 0;
+    padding: 1rem;
+    position: absolute;
+    transition: all 0.3s;
+    width: $slide-width;
+    @media (max-width: 425px) {
+      padding: 0.5rem;
+    }
+}
+
+.carousel__slide-item-img-link {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    // change object fit below for full img (contain) or fill (cover)
+    img {
+        height: 100%;
+        object-fit: contain;
+        transition: all 0.5s ease;
+        width: 100%;
+        @media (max-width: 425px) {
+          object-fit: contain;
+        }
+    }
+
+    &::after {
+        align-items: center;
+        background: rgba(black, 0.5);
+        color: white;
+        content: 'buy print';
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        width: 100%;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+
+        img {
+            transform: scale(1.3);
+        }
+    }
+}
+
+.carousel-slide-item__body {
+    // bottom: -2.5rem;
+    height: 10%;
+}
+
+.carousel__btn {
+    align-items: center;
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--prev {
+        left: -10rem;
+    }
+
+    &--next {
+        right: -10rem;
+    }
+}
+
+// @media (max-width: 425px) {
+.carousel__btn-arrow {
+    border: solid black;
+    border-width: 0 0.4rem 0.4rem 0;
+    height: 6rem;
+    padding: 0px;
+    width: 6rem;
+    z-index: 10;
+    @media (max-width: 425px) {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    &--left {
+        margin-left: 30px;
+        transform: rotate(135deg);
+    }
+
+    &--right {
+        margin-right: 30px;
+        transform: rotate(-45deg);
+    }
+}
+
+// dots set to display : none, change to inline-block to make visible
+.carousel__dots {
+    display: none;
+    left: 50%;
+    margin-top: 2rem;
+    position: absolute;
+    transform: translateX(-50%);
+    @media (max-width: 425px) {
+      margin-top: 1rem;
+    }
+    
+
+    .dot {
+        background: #ccc;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 2rem;
+        margin: 0 0.3rem;
+        outline: none;
+        transform: scale(0.5);
+        width: 2rem;
+        @media (max-width: 425px) {
+          transform: scale(0.25);
+          margin: 0;
+        }
+
+        &.active {
+            background: black;
+        }
+    }
+}
