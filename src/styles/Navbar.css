@@ -1,0 +1,36 @@
+.page-title {
+  color: palevioletred !important;
+  font-size: 36px !important;
+}
+
+.menu-links {
+  margin-right: 10px !important;
+  color: palevioletred !important;
+  font-size: 24px;
+  transition: color 0.4s;
+}
+.menu-links:hover {
+  color: rgb(136, 60, 86) !important;
+}
+
+@media (orientation: portrait) {
+  .menu-links {
+    color: white !important;
+    margin-right: 0px !important;
+  }
+
+  .page-title {
+    font-size: 22px !important;
+  }
+}
+
+
+
+.dropdown-btn {
+  margin-right: 10px !important;
+  background-color: rgba(255,255,255,0.4) !important;
+}
+
+.navbar {
+  width: 100vw;
+}
