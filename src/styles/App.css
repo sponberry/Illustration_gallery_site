@@ -1,15 +1,1 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css");
-
-.page-title {
-  color: palevioletred !important;
-  font-size: 36px !important;
-}
-
-.menu-links {
-  color: palevioletred !important;
-  font-size: 24px;
-  transition: color 0.4s;
-}
-.menu-links:hover {
-  color: rgb(136, 60, 86) !important;
-}

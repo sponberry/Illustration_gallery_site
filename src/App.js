@@ -10,12 +10,17 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
 function App() {
+  const now = new Date()
+
   return (
     <div className="app">
       <NavBar />
       <FirstSection />
       <Gallery />
       <AboutSection />
+      <footer>
+        Copyright {now.getFullYear()} Abigail Nottingham
+      </footer>
     </div>
   );
 }

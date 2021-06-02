@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
 .page-title {
   color: palevioletred !important;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px !important;
+  font-weight: 300;
 }
 
 .menu-links {
   margin-right: 10px !important;
   color: palevioletred !important;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
+  font-weight: 300;
   transition: color 0.4s;
 }
 .menu-links:hover {
@@ -20,7 +26,7 @@
   }
 
   .page-title {
-    font-size: 22px !important;
+    font-size: 28px !important;
   }
 }
 

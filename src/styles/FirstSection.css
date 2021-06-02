@@ -1,39 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
 .background-img {
   width: 100vw;
 }
 
-/* 
-  .opener {
-    background-size: 800px;
-  }
-} */
-
-/* TODO make this positioning more reliable across all devices */
 .enter-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
   padding: 20px;
   position: absolute;
   left: 40%;
   top: 70%;
   opacity: 70%;
-  /* @media all and (orientation: portrait) {
-    .enter-button {
-      display: none !important;
-    }
-  } */
-  /* @media (max-width: 375px) {
-
-  } */
 }
-
+.caption {
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
 @media (orientation: portrait) {
+  .enter-button {
+    left: 10%;
+  }
   .enter-button button {
     display: none !important;
+  }
+  .caption {
+    color: #ffffff;
+    display: block;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
 .enter-button p {
   padding-top: 10px;
-  @media all and (orientation: portrait) {
-    background-color: red !important;
-  }
 }

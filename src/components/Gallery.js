@@ -5,7 +5,7 @@ function Gallery () {
 
 
   return (
-      <div className="row gallery-container">
+      <div className="row gallery-container" id="gallery">
         <ReactCarousel />
       </div>
   )

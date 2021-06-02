@@ -114,7 +114,7 @@ const Carousel = () => {
     return (
         <div className="carousel__wrap">
             <div className="carousel__inner">
-                <button className="carousel__btn carousel__btn--prev" onClick={() => prevClick()}>
+                <button className="carousel__btn carousel__btn--prev" aria-label="previous image" onClick={() => prevClick()}>
                     <i className="carousel__btn-arrow carousel__btn-arrow--left" />
                 </button>
                 <div className="carousel__container">
@@ -130,7 +130,7 @@ const Carousel = () => {
                         ))}
                     </ul>
                 </div>
-                <button className="carousel__btn carousel__btn--next" onClick={() => nextClick()}>
+                <button className="carousel__btn carousel__btn--next" aria-label="next image" onClick={() => nextClick()}>
                     <i className="carousel__btn-arrow carousel__btn-arrow--right" />
                 </button>
                 <div className="carousel__dots">

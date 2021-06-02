@@ -7,7 +7,7 @@ const gardenSunSmall = require("../img/736_img.png")
 const gardenSunSmallPortrait = require("../img/425_img.png")
 
 const FirstSection = () => (
-  <div className="sectionOne">
+  <div className="sectionOne" id="home">
     <picture>
       <source srcSet={gardenSunLarge.default} media="(min-width: 1024px)" />
       <source srcSet={gardenSunMedium.default} media="(min-width: 800px)" />
@@ -21,7 +21,10 @@ const FirstSection = () => (
     </picture>
 
     <div className="enter-button text-center">
-      <button className="btn btn-light">View All Illustrations</button>
+      <div className="caption">illustrations below ↓</div>
+      <a href="#gallery">
+        <button className="btn btn-light">View All Illustrations</button>
+      </a>
     </div>
   </div>
 )
