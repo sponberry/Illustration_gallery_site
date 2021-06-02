@@ -11,7 +11,9 @@ const CarouselSlideItem = ({pos, idx, activeIdx, createItem}) => {
           <div className="carousel-slide-item__body">
           <div class="input-group mb-3">
             <div class="input-group-prepend" id="button-addon3 button-addon4">
-              <button class="btn btn-outline-secondary" type="button">Buy Print</button>
+              <a href={item.image.redBubble} target="blank" rel="noreferrer">
+                <button class="btn btn-outline-secondary" type="button">Buy Print</button>
+              </a>
               {/* remove extra-btn class if 3rd btn required */}
               <button class="btn btn-outline-secondary extra-btn" type="button"></button>
               <button class="btn btn-outline-secondary right-btn" type="button">Buy Stock Image</button>
