@@ -15,8 +15,8 @@
 }
 
 .enter-button button {
-  display: inherit;
-  position: fixed;
+  display: inline-block;
+  position: relative;
   z-index: 999;
 }
 
