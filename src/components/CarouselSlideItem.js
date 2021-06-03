@@ -17,14 +17,16 @@ const CarouselSlideItem = ({pos, idx, activeIdx, createItem}) => {
   }
 
   return (
-      <li className="carousel__slide-item" style={item.styles}>
+      <li 
+        className="carousel__slide-item" 
+        style={item.styles}
+        onClick={() => handleClick(item.image.redBubble)}
+      >
           <div className="carousel__slide-item-img-link">
-            <a href={item.image.redBubble} target="blank" rel="noreferrer">
-              <img 
-                src={item.image.url.default} 
-                alt={item.image.altText} 
-              />
-            </a>
+            <img 
+              src={item.image.url.default} 
+              alt={item.image.altText} 
+            />
           </div>
           <div className="carousel-slide-item__body">
             <div className="message">
