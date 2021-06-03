@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/FirstSection.css"
 
-const gardenSunLarge = require("../img/1024_img.png")
+const gardenSunLarge = require("../img/1024_img.jpg")
 const gardenSunMedium = require("../img/800_img.png")
 const gardenSunSmall = require("../img/736_img.png")
 const gardenSunSmallPortrait = require("../img/425_img.png")

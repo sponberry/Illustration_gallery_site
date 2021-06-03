@@ -12,6 +12,7 @@
   left: 40%;
   top: 70%;
   opacity: 70%;
+  z-index: 999;
 }
 .caption {
   display: none;
