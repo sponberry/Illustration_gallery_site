@@ -1,24 +1,55 @@
-import React from "react"
+import React, { useState } from "react"
 
 const CarouselSlideItem = ({pos, idx, activeIdx, createItem}) => {
+  const [ message, setMessage ] = useState("")
+  
   const item = createItem(pos, idx, activeIdx);
+
+  const handleClick = link => {
+    if (!link) {
+      setMessage("Option not available for this illustration")
+      setTimeout(() => {
+        setMessage("")
+      }, 3000)
+    } else {
+      window.open(link)
+    }
+  }
 
   return (
       <li className="carousel__slide-item" style={item.styles}>
           <div className="carousel__slide-item-img-link">
-              <img src={item.image.url.default} alt={item.image.altText} />
+            <a href={item.image.redBubble} target="blank" rel="noreferrer">
+              <img 
+                src={item.image.url.default} 
+                alt={item.image.altText} 
+              />
+            </a>
           </div>
           <div className="carousel-slide-item__body">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend" id="button-addon3 button-addon4">
-              <a href={item.image.redBubble} target="blank" rel="noreferrer">
-                <button class="btn btn-outline-secondary" type="button">Buy Print</button>
-              </a>
-              {/* remove extra-btn class if 3rd btn required */}
-              <button class="btn btn-outline-secondary extra-btn" type="button"></button>
-              <button class="btn btn-outline-secondary right-btn" type="button">Buy Stock Image</button>
+            <div className="message">
+              {message}
             </div>
-          </div>
+            <div className="input-group mb-3">
+              <div className="input-group-prepend" id="button-addon3 button-addon4">
+                <button 
+                  class="btn btn-outline-secondary" 
+                  type="button"
+                  onClick={() => handleClick(item.image.redBubble)}
+                >
+                  Buy Print
+                </button>
+                {/* remove extra-btn class if 3rd btn required */}
+                <button className="btn btn-outline-secondary extra-btn" type="button"></button>
+                <button 
+                  className="btn btn-outline-secondary right-btn" 
+                  type="button"
+                  onClick={() => handleClick(item.image.stock)}
+                >
+                  Buy Stock Image
+                </button>
+              </div>
+            </div>
           </div>
       </li>
   );

@@ -5,6 +5,13 @@ $slide-width: 30rem;
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
+.message {
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+}
 
 .gallery-container {
   margin: 5% 25%;
