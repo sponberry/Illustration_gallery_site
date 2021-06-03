@@ -12,8 +12,18 @@
   left: 40%;
   top: 70%;
   opacity: 70%;
+}
+
+.enter-button button {
+  display: inherit;
+  position: inherit;
   z-index: 999;
 }
+
+button:hover {
+  text-decoration: none !important;
+}
+
 .caption {
   display: none;
   font-family: "Montserrat", sans-serif;
