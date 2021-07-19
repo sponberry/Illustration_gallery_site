@@ -25,6 +25,7 @@ const CarouselSlideItem = ({pos, idx, activeIdx, createItem}) => {
             <img 
               src={item.image.url.default} 
               alt={item.image.altText} 
+              className="lozad"
             />
           </div>
           <div className="carousel-slide-item__body">

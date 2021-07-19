@@ -5,8 +5,8 @@ import "../styles/About.css"
 const picture = require("../img/plant_lady.jpeg")
 
 const paragraphs = {
-  about: "I have a passion for well-being, health and self-care, which is the focus of many of my illustrations, and I’m committed to bringing helpful messages to your audience and encouraging feelings of fulfilment and self-compassion through the images I create.",
-  projects: "I’ve worked with a number of clients across varying industries before, including Mr Swan’s Sweets, local bands such as The Red Rock Rivers and The Andrinis, Amelia’s Magazine, Hulls Angels Roller Derby and Juno Magazine.",
+  about: "I have a passion for well-being, health and self-care, which is the focus of many of my illustrations, and I’m committed to bringing helpful messages to the world and encouraging feelings of fulfilment and self-compassion through the images I create.",
+  projects: "I’ve worked with a number of clients across varying industries before, including Peace, Love & Yoga With Kate, Mr Swan’s Sweets, local bands such as The Red Rock Rivers and The Andrinis, Amelia’s Magazine, Hulls Angels Roller Derby and Juno Magazine.",
 }
 
 const AboutSection = () => (
@@ -47,10 +47,10 @@ const AboutSection = () => (
       </div>
       <div className="col-md-6">
         <p>
-        Email me: <a href="mailto:abi@abigail-illustration.com?subject=Illustration Query">
+        I'm not currently taking commissions, but you can email me: <a href="mailto:abigailillustration@gmail.com?subject=Illustration Query">
           abi@abigail-illustration.com
           </a>
-           {" "}for commissions, collaborations, product requests or even just to put out some feelers for your upcoming project. Or follow me below on socials.
+           {" "}with queries or print requests. Or follow me below on socials.
         </p>
         <div className="icon-set">
           <span className="icons">

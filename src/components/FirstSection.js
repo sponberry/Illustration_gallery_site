@@ -16,7 +16,7 @@ const FirstSection = () => (
       <img 
         src={gardenSunLarge.default}
         alt="background illustration of woman relaxing in the sun"
-        className="background-img"
+        className="background-img lozad"
       />
     </picture>
 
