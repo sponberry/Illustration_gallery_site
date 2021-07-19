@@ -17,6 +17,7 @@
   top: 75%;
   opacity: 70%;
   z-index: 999;
+  visibility: visible;
 }
 
 button:hover {
@@ -39,15 +40,7 @@ button:hover {
   }
 
   .sectionOne button {
-    display: none !important;
-  }
-
-  .sectionOne p {
-    color: #000000;
-    display: block !important;
-    margin: 0 auto;
-    padding: 0 30px;
-    opacity: 60%;
+    visibility: hidden;
   }
 }
 
