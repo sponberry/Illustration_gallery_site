@@ -20,12 +20,9 @@ const FirstSection = () => (
       />
     </picture>
 
-      <a href="#gallery">
-        <button className="btn btn-light">View All Illustrations</button>
-      </a>
-      {/* <a href="#gallery">
-        <button className="btn btn-light alt-btn">View All Illustrations</button>
-      </a> */}
+    <a href="#gallery">
+      <button className="btn btn-light">View All Illustrations</button>
+    </a>
   </div>
 )
 
