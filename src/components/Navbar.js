@@ -5,7 +5,7 @@ import "../styles/Navbar.css"
 
 const NavBar = () => (
   <Navbar collapseOnSelect expand="false" bg="none" fixed="top">
-    <Navbar.Brand href="#home" className="page-title">abigailillustration</Navbar.Brand>
+    <Navbar.Brand href="#home" className="page-title"><h1>abigailillustration</h1></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" className="dropdown-btn"/>
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="text-lg-right text-center">

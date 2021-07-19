@@ -31,7 +31,7 @@ const AboutSection = () => (
 
     <div className="row">
       <div className="col-md-6">
-        <h2>projects</h2>
+        <h3>projects</h3>
       </div>
       <div className="col-md-6">
         <p>
@@ -43,7 +43,7 @@ const AboutSection = () => (
 
     <div className="row">
       <div className="col-md-6">
-        <h2>contact</h2>
+        <h3>contact</h3>
       </div>
       <div className="col-md-6">
         <p>
